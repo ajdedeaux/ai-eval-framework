@@ -1,181 +1,202 @@
 # 20-Minute Workflow
-**Step-by-step execution of systematic AI evaluation**
+**Fast execution of systematic AI research (after initial setup)**
 
-## Pre-Work (5 minutes)
+## Prerequisites
+This workflow assumes you've already completed the discovery process:
+- ✅ Problem clearly defined through alignment phase
+- ✅ Master research prompt created and tested
+- ✅ Research scope narrowed to specific target
+- ✅ Evidence standards established
 
-### Define Your Research Target
-Fill out these parameters before starting:
+**If you haven't done this setup, see [`methodology.md`](methodology.md) for the complete 60-minute discovery process.**
+
+---
+
+## Pre-Work (2 minutes)
+
+### Define Today's Research Target
+Fill out these specific parameters:
 
 ```
 Domain: [Your industry/field]
 Subject: [Specific thing to research]
 Scope: [What you need to know]
-Business Need: [Why this matters]
+Business Need: [Why this matters now]
 ```
 
-**Example:**
+**Example from Purple Case:**
 ```
-Domain: SaaS project management tools
-Subject: Asana Enterprise features
-Scope: Pricing, user limits, integration capabilities
-Business Need: Vendor evaluation for 500-person team
+Domain: Mattress specifications
+Subject: Purple RestorePlus Cool Touch 13" Queen
+Scope: Coil count, construction layers, exclusivity verification
+Business Need: Customer asking technical questions not in training materials
 ```
 
 ### Set Up Workspace
 - Open 4 browser tabs: ChatGPT, Claude, Gemini, Perplexity
-- Copy your customized research prompt from `research-prompt.md`
-- Create document to collect outputs
-- Note start time
+- Have your master research prompt ready (customized from `research-prompt.md`)
+- Create document for collecting outputs
+- Start timer
+
+---
 
 ## Phase 1: Multi-LLM Research Deployment (8 minutes)
 
-### Deploy Research Prompt (2 minutes per system)
+### Deploy Your Master Prompt (2 minutes per system)
 
-**System 1: ChatGPT**
-1. Paste customized research prompt
-2. Wait for complete JSON output
-3. Copy result to collection document
-4. Label as "ChatGPT Output"
+Run your pre-built research prompt across all systems simultaneously:
 
-**System 2: Claude**
-1. Paste same prompt
-2. Wait for complete output
-3. Copy result to collection document  
-4. Label as "Claude Output"
+**All 4 Systems - Parallel Execution:**
+1. Paste your customized master prompt into each LLM
+2. Ensure JSON output format is being generated
+3. Copy each result to collection document as received
+4. Label outputs clearly (ChatGPT/Claude/Gemini/Perplexity)
 
-**System 3: Gemini** 
-1. Paste same prompt
-2. Wait for complete output
-3. Copy result to collection document
-4. Label as "Gemini Output"
-
-**System 4: Perplexity**
-1. Paste same prompt
-2. Wait for complete output
-3. Copy result to collection document
-4. Label as "Perplexity Output"
+**Quality Check**: Each output should have:
+- JSON structure
+- Evidence sources with URLs
+- Confidence levels (High/Medium/Low)
+- Technical specifications attempted
 
 **Time Check: 8 minutes elapsed**
 
+---
+
 ## Phase 2: Cross-Analysis (5 minutes)
 
-### Quick Correlation Check
-Return to ChatGPT (or your preferred system) with this prompt:
+### Find Consensus and Conflicts
+
+Return to your preferred LLM with this analysis prompt:
 
 ```
-I have research outputs from 4 different AI systems on the same topic. 
-I need you to analyze them for:
+I have research outputs from 4 different AI systems on [YOUR SUBJECT].
+Analyze for consensus and conflicts:
 
-1. Common findings (information all systems agree on)
-2. Discrepancies (conflicting information)  
-3. Unique insights (valuable info from only one system)
-4. Source quality assessment
-5. Overall confidence in findings
+1. CONSENSUS: What facts do 3+ systems agree on?
+2. CONFLICTS: What information differs between systems?
+3. EVIDENCE QUALITY: Which sources are most authoritative?
+4. CONFIDENCE: What can we state with certainty?
 
-Here are the outputs:
+[PASTE ALL 4 OUTPUTS]
 
-[PASTE ALL 4 OUTPUTS HERE]
-
-Provide analysis in this format:
-- CONSENSUS FINDINGS: [Items all systems agree on]
-- DISCREPANCIES: [Conflicting information requiring resolution]
-- UNIQUE INSIGHTS: [Valuable single-system information]  
-- SOURCE QUALITY: [Assessment of evidence documentation]
-- CONFIDENCE ASSESSMENT: [Overall reliability evaluation]
+Focus on HIGH confidence consensus for customer-facing use.
 ```
+
+**Purple Case Example Output:**
+- **Consensus**: 3" GelFlex Grid (all 4 systems)
+- **Conflict**: Coil count varies 789-892
+- **Best Evidence**: Purple.com official specs
+- **High Confidence**: Height, Grid thickness, exclusivity
 
 **Time Check: 13 minutes elapsed**
 
+---
+
 ## Phase 3: Validation and Clean Output (7 minutes)
 
-### Run Validation Check (3 minutes)
-Using same system, paste validation prompt from `validation-prompt.md` with your research synthesis:
+### Generate Deployment-Ready Data
+
+#### Quick Validation (3 minutes)
+Using the validation framework:
 
 ```
-[PASTE VALIDATION PROMPT]
+Validate this synthesized research for deployment:
+- Customer-safe claims (HIGH confidence only)
+- Technical accuracy (consensus findings)
+- Evidence chain (source documentation)
 
-EXECUTE VALIDATION FOR: [PASTE YOUR SYNTHESIZED RESEARCH]
+[PASTE CONSENSUS FINDINGS]
+
+Mark anything below HIGH confidence as "requires verification"
 ```
 
-### Generate Final Output (4 minutes)
-Based on validation results, create clean final version:
+#### Final Output Generation (4 minutes)
+Create clean, structured output:
 
 ```
-Based on the validation results, create the final research output that:
+Generate final JSON output with:
+- Customer-safe facts (HIGH confidence consensus only)
+- Requires verification (MEDIUM confidence items)
+- Missing information (identified gaps)
+- Evidence trail (source URLs for all claims)
 
-1. Uses only HIGH confidence information for customer-facing claims
-2. Properly separates MEDIUM confidence items as "requires verification"
-3. Excludes LOW confidence information
-4. Includes complete source documentation
-5. Provides deployment-ready specifications
-
-Structure as JSON following the original research format, but include only validated, deployment-ready information.
+Use the structure from example-output.json
 ```
 
 **Time Check: 20 minutes total**
 
+---
+
+## What This Workflow Delivers
+
+### In 20 Minutes You Get:
+- Consensus findings from 4 AI systems
+- Evidence-graded specifications
+- Customer-ready information separated from internal-use
+- Full source documentation
+- Structured JSON for future automation
+
+### Compared to Manual Research (3 hours):
+- Same accuracy (95%+ match)
+- Better documentation (every claim sourced)
+- Systematic validation (not subjective)
+- Repeatable process (same quality every time)
+
+---
+
+## When to Use Full 60-Minute Process Instead
+
+Use the complete methodology from [`methodology.md`](methodology.md) when:
+- First time researching a new domain
+- Creating new master prompts
+- Training team members
+- Establishing evidence standards
+- Discovering optimal research approach
+
+---
+
 ## Quality Checkpoints
 
-### After Multi-LLM Research (8-minute mark)
-- [ ] Have 4 complete outputs in JSON format
-- [ ] All systems addressed your specific research scope
-- [ ] Technical specifications present (even if some marked as unavailable)
-- [ ] Source documentation included in each output
+### 8-Minute Mark (After Research)
+- [ ] Have 4 JSON outputs collected
+- [ ] Each has evidence documentation
+- [ ] Technical specs attempted by all systems
 
-### After Cross-Analysis (13-minute mark)  
-- [ ] Clear consensus on key facts identified
-- [ ] Conflicting information flagged for attention
-- [ ] Source quality assessed across all outputs
-- [ ] Confidence levels make sense based on source types
+### 13-Minute Mark (After Analysis)
+- [ ] Consensus findings identified
+- [ ] Conflicts documented
+- [ ] Confidence levels assigned
 
-### After Validation (20-minute mark)
-- [ ] Final output passes structural compliance
-- [ ] Customer-safe information clearly separated
-- [ ] All claims have appropriate source documentation
-- [ ] Ready for business deployment without additional verification
+### 20-Minute Mark (Final)
+- [ ] Customer-safe facts separated
+- [ ] Evidence chain complete
+- [ ] Ready for deployment
 
-## Common Time Extensions
+---
 
-### If Analysis Takes Longer (15-25 minutes total)
-**Cause**: Complex discrepancies between system outputs
-**Solution**: Focus on consensus findings first, flag discrepancies for future research
+## Troubleshooting Quick Reference
 
-### If Validation Fails (25-35 minutes total)
-**Cause**: Poor source quality or structural issues
-**Solution**: Return to highest-quality single output, supplement with targeted additional research
+| If This Happens | Do This |
+|-----------------|---------|
+| No JSON from some LLMs | Add "Return ONLY valid JSON" to prompt |
+| No consensus found | Focus on official sources only |
+| Taking >20 minutes | Narrow scope to critical specs |
+| Poor evidence quality | Explicitly require URLs for all claims |
 
-### If Scope Too Broad (30+ minutes total)
-**Cause**: Research target not specific enough
-**Solution**: Narrow scope, focus on core business need, repeat process
+---
 
-## Success Indicators
+## Scaling This Workflow
 
-### High-Quality 20-Minute Output
-- Consensus findings from multiple AI systems
-- High confidence sources for key claims
-- Structured, deployment-ready information
-- Clear action items and business insights
-- Complete audit trail of sources and methodology
+### For Daily Use:
+- Save domain-specific prompts
+- Build library of validated outputs
+- Track which LLMs perform best for your domain
+- Refine evidence standards based on results
 
-### Ready for Business Use
-- Customer-facing information verified through multiple sources  
-- Technical specifications include confidence levels
-- Competitive context based on factual differences
-- Missing information clearly identified
-- Recommendations actionable and specific
+### For Team Adoption:
+- Share master prompts in team repository
+- Establish consensus thresholds (3/4 systems = valid)
+- Create domain-specific validation criteria
+- Document successful research examples
 
-## Scaling Tips
-
-### For Regular Research Needs
-- Save customized prompts for your domain
-- Create templates for common research types
-- Build library of validated outputs for reference
-- Track success metrics (time, accuracy, business impact)
-
-### For Team Implementation  
-- Standardize on prompt templates
-- Create shared validation criteria
-- Document domain-specific source hierarchies
-- Establish review process for customer-facing materials
-
-This workflow transforms ad hoc AI research into systematic, measurable quality control that scales across teams and use cases.
+**Remember**: This 20-minute workflow is for execution after you've done the groundwork. The first research in any new domain should use the full 60-minute methodology to establish your approach.
