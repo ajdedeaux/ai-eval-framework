@@ -31,7 +31,7 @@ Chat with your preferred LLM until you both understand exactly what you need to 
 Build one research prompt that works across multiple LLMs. Structure outputs for AI consumption.
 
 ### 3. Multi-LLM Research (15 min)
-Run the same prompt on ChatGPT, Claude, Gemini, and Perplexity. Collect all outputs.
+Run the same deep research prompt on ChatGPT, Claude, Gemini, and Perplexity. Collect all outputs.
 
 ### 4. Cross-Analysis & Grading (20 min)
 Compare outputs, grade sources (High/Medium/Low confidence), find commonalities.
