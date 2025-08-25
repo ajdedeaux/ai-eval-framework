@@ -1,0 +1,87 @@
+{
+  "research_subject": "Purple RestorePlus Cool Touch 13\" Queen",
+  "domain": "mattress specifications",
+  "last_updated": "2024-01-15",
+  "key_findings": [
+    {
+      "category": "Construction",
+      "claim": "3-inch GelFlex Grid comfort layer",
+      "details": "Proprietary hyper-elastic polymer grid for pressure relief",
+      "confidence": "High"
+    },
+    {
+      "category": "Support System",
+      "claim": "789 individually wrapped coils in Queen size",
+      "details": "8-inch zoned pocketed coil system with reinforced edge support",
+      "confidence": "Medium"
+    },
+    {
+      "category": "Exclusivity",
+      "claim": "Cool Touch cover exclusive to Mattress Firm",
+      "details": "SoftFlex cover with cooling fibers not available at other retailers",
+      "confidence": "High"
+    }
+  ],
+  "technical_specifications": {
+    "profile_height_in": 13,
+    "grid_thickness_in": 3,
+    "coil_height_in": 8,
+    "coil_count_queen": 789,
+    "weight_queen_lb": 147,
+    "warranty_years": 10
+  },
+  "evidence_sources": [
+    {
+      "source_name": "Purple Official",
+      "url": "https://purple.com/mattresses/restore-plus",
+      "claim_supported": "3\" GelFlex Grid construction",
+      "confidence_level": "High",
+      "access_date": "2024-01-15"
+    },
+    {
+      "source_name": "Mattress Firm",
+      "url": "https://www.mattressfirm.com/purple/purple-restoreplus-cool-touch",
+      "claim_supported": "Retailer exclusive Cool Touch variant",
+      "confidence_level": "High",
+      "access_date": "2024-01-15"
+    },
+    {
+      "source_name": "GoodBed Database",
+      "url": "https://www.goodbed.com/mattress/purple-restore-plus/",
+      "claim_supported": "Queen coil count: 789 pocketed coils",
+      "confidence_level": "Medium",
+      "access_date": "2024-01-15"
+    }
+  ],
+  "competitive_context": {
+    "key_differentiators": [
+      "Only Purple model with Cool Touch cover technology",
+      "Mattress Firm exclusive variant",
+      "3\" Grid vs 2\" in standard RestorePlus"
+    ],
+    "market_position": "Premium hybrid targeting hot sleepers",
+    "unique_features": [
+      "GelFlex Grid pressure relief",
+      "Cool Touch temperature regulation",
+      "Reinforced edge support"
+    ]
+  },
+  "deployment_readiness": {
+    "customer_safe_facts": [
+      "13-inch profile height",
+      "3-inch GelFlex Grid",
+      "10-year warranty",
+      "Mattress Firm exclusive"
+    ],
+    "requires_verification": [
+      "Exact coil count (789 from GoodBed)",
+      "Weight specifications",
+      "Zoning details"
+    ],
+    "missing_information": [
+      "Exact cover material composition",
+      "Detailed layer-by-layer construction",
+      "Price points"
+    ]
+  }
+}
